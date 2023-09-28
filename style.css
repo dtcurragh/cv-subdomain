@@ -1,0 +1,81 @@
+:root {
+    --main-color: #333;
+    --secondary-color: #007BFF;
+    --padding-standard: 20px;
+}
+
+/* Simple Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--main-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: var(--padding-standard);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header img {
+    border-radius: 50%;  /* Optional: for rounded avatar */
+}
+
+#cv {
+    padding: 20px;
+}
+
+#cv h3 {
+    font-size: 1.5rem;
+}
+
+#cv ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#cv li {
+    margin-bottom: 10px;
+}
+
+#projects {
+    padding: 20px;
+    background-color: #f9f9f9;  /* Slightly different background for visual separation */
+}
+
+#projects a {
+    color: var(--secondary-color);  /* CSS Variable for color */
+    text-decoration: none;
+}
+
+#cv, #projects {
+    padding: var(--padding-standard);
+}
+
+
+
+@media (max-width: 768px) {
+    header, #cv, #projects, footer {
+        padding: 10px;
+    }
+    header h1, #cv h3 {
+        font-size: 1.5em;
+    }
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: var(--padding-standard);
+}

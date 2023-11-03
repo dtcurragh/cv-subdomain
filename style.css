@@ -1,6 +1,9 @@
 :root {
-    --main-color: #333;
-    --secondary-color: #007BFF;
+    --main-color: #000000;  /* White text */
+    --secondary-color: #000000;  /* You can adjust this if needed */
+    --background-color: #000000;  /* Dark background */
+    --secondary-background-color: #282828;  /* Slightly lighter dark background for visual separation */
+    --border-color: limegreen;  /* Border color for your image */
     --padding-standard: 20px;
 }
 
@@ -14,12 +17,12 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: var(--main-color);
+    color: antiquewhite;
+    background-color: #000000;
     line-height: 1.5;
 }
 
 header {
-    background-color: #f0f0f0;
     padding: var(--padding-standard);
     text-align: center;
 }
@@ -30,6 +33,14 @@ header h1 {
 
 header img {
     border-radius: 50%;  /* Optional: for rounded avatar */
+    border: 3px solid limegreen;
+    width: 150px;  /* Adjust width as necessary */
+    height: auto;  /* This will maintain the aspect ratio */
+    margin-top: 10px;
+}
+
+header p {
+    margin: 10px;
 }
 
 #cv {
@@ -51,7 +62,6 @@ header img {
 
 #projects {
     padding: 20px;
-    background-color: #f9f9f9;  /* Slightly different background for visual separation */
 }
 
 #projects a {
@@ -75,7 +85,6 @@ header img {
 }
 
 footer {
-    background-color: #f0f0f0;
     text-align: center;
     padding: var(--padding-standard);
 }

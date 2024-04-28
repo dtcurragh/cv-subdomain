@@ -1,55 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Sets the document language to English -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Sets character encoding for the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures responsiveness on mobile devices -->
     <title>Daniel Tierney</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Sets the page title -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Links to external CSS for styling -->
+  </head>
+  <body>
+    <header>
+      <!-- Page Header -->
+      <h1>Daniel Tierney</h1>
+      <!-- Displays the main heading -->
+      <p>Snr. Enterprise Support Specialist @ Shopify</p>
+      <!-- Job title and company -->
+      <img src="assets/photo.jpg" loading="lazy" alt="Profile photo" />
+      <!-- Lazy loads image to optimize performance -->
+    </header>
 
-<header>
-    <h1>Daniel Tierney</h1>
-    <p>Snr. Plus Support Specialist @ Shopify</p>
-    <img src="assets/photo.jpg" loading="lazy" alt="Daniel Tierney">  <!-- Lazy Loading here -->
-</header>
+    <section id="business">
+      <!-- Business and Service Section -->
+      <h1>About Me</h1>
+      <!-- Section heading -->
+      <p>
+        I offer text digitization services using advanced OCR and HWR
+        technologies, specializing in extracting information from handwritten
+        records and PDFs. My expertise includes developing Python-based tools
+        and web applications for data extraction. My primary focus is supporting
+        heritage and community projects by providing seamless digitization
+        solutions.
+      </p>
+      <p>
+        Whether it's fieldwork notes or historic grave record documents, I
+        ensure accurate text extraction and data compilation into user-friendly
+        formats such as CSV. With experience in frontend and backend
+        development, I create web applications with intuitive interfaces,
+        allowing for uploads directly from the field and real-time data
+        processing.
+      </p>
+      <p>
+        Clients benefit from reliable support, including advanced debugging and
+        problem-solving, backed by my experience with large-scale enterprise
+        applications. I strive to provide top-notch services, focusing on data
+        accuracy, security, and customer satisfaction.
+      </p>
+      <p>
+        If you'd like to learn more about my services or discuss a project,
+        email me at
+        <a href="mailto:me@danieltierney.ie">me@danieltierney.ie</a>. I'm happy
+        to answer any questions and explore how I can help with your text
+        digitization needs.
+      </p>
+    </section>
 
-<section id="cv">
-    <dl>
+    <section id="cv">
+      <!-- Curriculum Vitae Section -->
+      <h1>Education and Experience</h1>
+      <!-- Consistent section heading -->
+      <dl>
+        <!-- Description list to structure education, experience, and skills -->
         <dt>Education</dt>
-        <dd>Bachelor's Degree in Spanish and Latin American Studies</dd>
-        <dd>Masters in Computer Science from XYZ University</dd>
-        
+        <dd>
+          BA Degree in Spanish and Latin American Studies and Computer Science
+          from UCC
+        </dd>
+
         <dt>Experience</dt>
-        <dd>Senior Technical Support Specialist at Shopify - Providing top-notch support for high-volume merchants, ensuring seamless operations and swift issue resolution.</dd>
-        <dd>Web Developer at ABC Corp - Developed and maintained responsive, user-friendly company websites, improving site performance by 20%.</dd>
-        
+        <dd>
+          Senior Technical Support Specialist at Shopify - Providing support for
+          high-volume merchants, ensuring smooth operations and swift issue
+          resolution.
+        </dd>
+        <dd>
+          Support Specialist at Google Cloud - Supporting business customers
+          with Google Workspace, resolving payment issues, and advising on
+          account security.
+        </dd>
+
         <dt>Skills</dt>
-        <dd>HTML, CSS, JavaScript</dd>
-        <dd>React, Node.js, Express</dd>
-    </dl>
-</section>
+        <dd>Frontend Development: HTML, CSS, JavaScript, React</dd>
+        <dd>Backend Development: Node.js, Express, SQL</dd>
+        <dd>DevOps Tools: Splunk, GitHub, Zapier</dd>
+        <dd>Shopify Technologies: Liquid, GraphQL, REST APIs</dd>
+        <dd>
+          Support and Troubleshooting: Advanced debugging, problem-solving, POS
+          hardware, and customer support
+        </dd>
+        <dd>
+          Collaboration and Communication: Experience in cross-functional teams
+          and advocating for clients
+        </dd>
+      </dl>
+    </section>
 
+    <section id="projects">
+      <!-- Project Showcase Section -->
+      <h1>Projects</h1>
+      <!-- Section Heading -->
 
-<section id="projects">
-    <article>
-        <h3>Project Title 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis urna. Praesent ac gravida libero. Donec non hendrerit arcu. Nulla metus enim, malesuada eu elit eget, iaculis viverra erat.</p>
-        <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">View Project</a>
-    </article>
+      <dl>
+        <!-- HG TextHarvesterV2 -->
+        <dt>HG TextHarvesterV2</dt>
+        <!-- Project Title -->
+        <dd>
+          Developed a Python-based toolkit for digitizing historic grave
+          records, using OCR and HWR to extract text from PDFs and convert to
+          CSV. Later rebuilt as a web application in Node/Express for enhanced
+          functionality and a user-friendly interface.
+        </dd>
+        <dd>
+          <a
+            href="https://hg-textharvest-v2.fly.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+          <!-- Link to project with safe practices -->
+        </dd>
 
-    <article>
-        <h3>Project Title 2</h3>
-        <p>Proin sed ante vitae urna cursus luctus non eget mauris. Curabitur pretium, eros vitae auctor facilisis, sapien sapien blandit urna, vitae fermentum ligula odio ut est.</p>
-        <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer">View Project</a>
-    </article>
+        <!-- Basic Weather App -->
+        <dt>Basic Weather App</dt>
+        <!-- Project Title -->
+        <dd>
+          Created a basic weather app using HTML, JavaScript, and Node.js,
+          integrating with a weather API to fetch real-time weather data.
+        </dd>
+        <dd>
+          <a
+            href="https://sparkling-tree-3067.fly.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+          <!-- Link to project with safe practices -->
+        </dd>
 
-    <!-- Repeat for other projects -->
-</section>
+        <!-- Basic To-Do List App -->
+        <dt>Basic To-Do List App</dt>
+        <!-- Project Title -->
+        <dd>
+          A simple to-do list web app built with HTML, CSS, Bootstrap,
+          JavaScript, Express, and Mongoose, allowing users to manage tasks.
+        </dd>
+        <dd>
+          <a
+            href="https://muddy-thunder-7087.fly.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+          <!-- Link to project with safe practices -->
+        </dd>
+      </dl>
+    </section>
 
-<footer>
-    <p>&copy; 2023 Daniel Tierney | Last updated: September 2023</p>
-</footer>
-
-</body>
+    <footer>
+      <p>&copy; 2024 Daniel Tierney | Last updated: April 2024</p>
+      <!-- Footer with copyright and last updated date -->
+    </footer>
+  </body>
 </html>

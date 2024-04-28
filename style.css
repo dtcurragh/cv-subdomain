@@ -1,90 +1,135 @@
 :root {
-    --main-color: #000000;  /* White text */
-    --secondary-color: #000000;  /* You can adjust this if needed */
-    --background-color: #000000;  /* Dark background */
-    --secondary-background-color: #282828;  /* Slightly lighter dark background for visual separation */
-    --border-color: limegreen;  /* Border color for your image */
-    --padding-standard: 20px;
+    --main-color: #FFFFFF; /* White text */
+    --secondary-color: #CCCCCC; /* Light gray for secondary elements */
+    --background-color: #1F1F1F; /* Dark background */
+    --secondary-background-color: #282828; /* Slightly lighter for separation */
+    --border-color: limegreen; /* Border color for images */
+    --padding-standard: 20px; /* Padding for consistent spacing */
+    --line-height-standard: 1.75; /* Increased line height for readability */
+    --focus-outline: limegreen; /* Color for focus outlines */
 }
 
-/* Simple Reset */
+/* Reset default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: antiquewhite;
-    background-color: #000000;
-    line-height: 1.5;
+    font-size: 16px; /* Standard font size */
+    color: var(--main-color); 
+    background-color: var(--background-color);
+    line-height: var(--line-height-standard); /* Increased line height */
+}
+a {
+    color: var(--main-color);
+}
+/* Ensure focus outlines are visible for keyboard navigation */
+a:focus, button:focus {
+    outline: 2px solid var(--focus-outline); /* High-contrast focus outlines */
 }
 
+/* Header Styles */
 header {
-    padding: var(--padding-standard);
-    text-align: center;
+    padding: var(--padding-standard); 
+    text-align: center; /* Center the header content */
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Larger font size for main heading */
 }
 
 header img {
-    border-radius: 50%;  /* Optional: for rounded avatar */
-    border: 3px solid limegreen;
-    width: 150px;  /* Adjust width as necessary */
-    height: auto;  /* This will maintain the aspect ratio */
-    margin-top: 10px;
+    border-radius: 50%; /* Circular image style */
+    border: 3px solid var(--border-color);
+    width: 150px; /* Consistent image width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Increased margin for breathing room */
 }
 
 header p {
-    margin: 10px;
+    color: var(--secondary-color); /* Light gray for secondary text */
+    margin: 10px; /* Spacing around the paragraph */
 }
 
+/* Business Section Styles */
+#business {
+    padding: var(--padding-standard); /* Consistent padding */
+    background-color: var(--secondary-background-color); /* Slightly lighter for visual separation */
+}
+
+#business h2 {
+    font-size: 1.75rem; /* Consistent font size for section heading */
+    color: var(--main-color); /* High contrast for readability */
+}
+
+#business p {
+    color: var(--secondary-color); /* Light gray for text */
+    line-height: var(--line-height-standard); /* Maintain line height */
+    margin-bottom: 15px; /* Increased spacing between paragraphs */
+}
+
+/* CV Section Styles */
 #cv {
-    padding: 20px;
+    padding: var(--padding-standard); /* Consistent padding */
+    background-color: var(--secondary-background-color); /* Slightly lighter for separation */
 }
 
-#cv h3 {
-    font-size: 1.5rem;
+#cv dt {
+    font-weight: bold; /* Emphasize definition list terms */
+    color: var(--main-color); /* High contrast */
+    margin-bottom: 5px; /* Add spacing below terms */
 }
 
-#cv ul {
-    list-style-type: none;
-    margin-bottom: 20px;
+#cv dd {
+    margin-bottom: 10px; /* Add spacing between descriptions */
+    color: var(--secondary-color); /* Light gray text color */
 }
 
-#cv li {
-    margin-bottom: 10px;
-}
-
+/* Project Section Styles */
 #projects {
-    padding: 20px;
+    padding: var(--padding-standard); /* Consistent padding */
+    background-color: var(--secondary-background-color); /* Light background for visual separation */
+}
+
+#projects dt {
+    font-weight: bold; /* Emphasize project titles */
+    /* font-size: 1.5rem; Consistent font size for project headings */
+    color: var(--main-color); /* High contrast */
+}
+
+#projects dd {
+    margin-bottom: 15px; /* Increased spacing between descriptions */
+    color: var(--secondary-color); /* Light gray for project descriptions */
 }
 
 #projects a {
-    color: var(--secondary-color);  /* CSS Variable for color */
-    text-decoration: none;
+    color: var(--main-color); /* White text for links */
+    text-decoration: none; /* No underline by default */
 }
 
-#cv, #projects {
-    padding: var(--padding-standard);
+#projects a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
 }
 
-
-
-@media (max-width: 768px) {
-    header, #cv, #projects, footer {
-        padding: 10px;
-    }
-    header h1, #cv h3 {
-        font-size: 1.5em;
-    }
-}
-
+/* Footer Styles */
 footer {
-    text-align: center;
-    padding: var(--padding-standard);
+    text-align: center; 
+    padding: var(--padding-standard); 
+    background-color: var(--secondary-background-color); /* Consistent separation */
+    color: var(--secondary-color); /* Consistent footer text color */
+    margin-top: 20px; /* Adds space between footer and content above */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header, #business, #cv, #projects, footer {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+    header h1, #business h2, #cv dt {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
 }
